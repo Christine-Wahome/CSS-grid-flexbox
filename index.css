@@ -17,6 +17,7 @@
     margin: auto;
  }
 
+@media (min-width: 1440px) {
 .content{
     display: grid;
     align-content: center;
@@ -34,6 +35,8 @@
    padding-left: 200px;
    
 }
+ }
+
 
 
 
@@ -217,4 +220,24 @@ color:hsl(240, 100%, 5%);
     display: flex;
     justify-content: start;
     padding-left: 10px;
+}
+
+@media (min-width: 375px) {
+    .content{
+        display: grid;
+        align-content: center;
+        height: 90%;
+        width: 80%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "one one two"
+        "three four two"
+        "five six seven"
+       ;
+       align-items: center;
+       gap: 5px;
+       padding-left: 200px;
+       
+    }
 }
